@@ -1,6 +1,14 @@
 import { graphql } from 'react-apollo';
 import Link from 'next/link'
 import gql from 'graphql-tag';
+import styled from 'react-emotion'
+
+const Image = styled.img`
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+`;
 
 function PostsList({
   loading,
@@ -20,7 +28,10 @@ function PostsList({
                 </Link>
               </h2>
               {featuredImage && (
-                <img src={featuredImage.sourceUrl} alt={`Featured image for: ${title}`} />
+                <Image
+                  alt={`Featured image for: ${title}`}
+                  src={featuredImage.sourceUrl}
+                />
               )}
             </li>
           ))}

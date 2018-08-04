@@ -13,6 +13,8 @@
   "dependencies": {
     "apollo-boost": "^0.1.12",
     "babel-plugin-root-import": "^6.1.0",
+    "emotion": "^9.2.6",
+    "emotion-server": "^9.2.6",
     "express": "^4.16.3",
     "graphql": "^0.13.2",
     "graphql-tag": "^2.9.2",
@@ -21,6 +23,7 @@
     "nextjs-dynamic-routes": "^2.1.8",
     "react": "^16.4.1",
     "react-apollo": "^2.1.9",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "react-emotion": "^9.2.6"
   }
 }
